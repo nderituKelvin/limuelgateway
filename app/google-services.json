@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "886987699934",
+    "firebase_url": "https://gateway-565eb.firebaseio.com",
+    "project_id": "gateway-565eb",
+    "storage_bucket": "gateway-565eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886987699934:android:03fb7fc23d9686eb",
+        "android_client_info": {
+          "package_name": "com.groupwork.limuel.gateway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886987699934-fq8o7kdb09ajm93n1tsplicgl7h30kvj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groupwork.limuel.gateway",
+            "certificate_hash": "f17ccfdf4c2cda58c970c85e022ea0ad5c22c03e"
+          }
+        },
+        {
+          "client_id": "886987699934-6a1hpqb87hvb3llcu0g1sulk949cpkvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzywvIYMLXRy99fRJ8Etno0hlVi8vO1Zo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886987699934-6a1hpqb87hvb3llcu0g1sulk949cpkvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
