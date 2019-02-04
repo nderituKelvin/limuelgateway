@@ -1,5 +1,6 @@
 package com.groupwork.limuel.gateway;
 
+import android.app.Application;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -31,12 +32,12 @@ public class DriverLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_login);
 
-        mEmail=(EditText) findViewById(R.id.email);
-        mPassword= (EditText)findViewById(R.id.password);
+//        EditText  mEmail = findViewById(R.id.email);
+//        EditText mPassword = findViewById(R.id.password);
 
-        mLogin =(Button) findViewById(R.id.login);
-        mRegister=(Button)findViewById(R.id.register);
-        FirebaseApp.initializeApp(this);
+//        Button mLogin = findViewById(R.id.login);
+//        Button mRegister = findViewById(R.id.register);
+        FirebaseApp.initializeApp(getApplicationContext());
 
         mAuth = FirebaseAuth.getInstance();
         firebaseAuthListener= new FirebaseAuth.AuthStateListener() {
@@ -53,14 +54,11 @@ public class DriverLoginActivity extends AppCompatActivity {
             }
         };
 
-        mEmail = (EditText) findViewById(R.id.email);
-        mPassword= (EditText)findViewById(R.id.password);
+        final EditText mEmail =  findViewById(R.id.email);
+        final EditText mPassword= findViewById(R.id.password);
 
-        mLogin =(Button) findViewById(R.id.login);
-        mRegister =(Button) findViewById(R.id.register);
-
-
-
+        final Button mLogin = findViewById(R.id.login);
+        final Button mRegister = findViewById(R.id.register);
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
